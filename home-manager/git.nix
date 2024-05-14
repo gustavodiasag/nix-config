@@ -15,7 +15,7 @@
 
     aliases = {
       c = "commit";
-      r = "rebase"
-    }
+      r = "rebase";
+    };
   };
 }
