@@ -12,5 +12,10 @@
       pull.rebase = "true";
       init.defaultBranch = "main";
     };
+
+    aliases = {
+      c = "commit";
+      r = "rebase"
+    }
   };
 }
