@@ -70,6 +70,7 @@
     description = "Gustavo Dias de Aguiar";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = [];
+    shell = pkgs.zsh;
   };
 
   # Install firefox.
@@ -80,8 +81,8 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  programs.zsh.enable = true;
+
   environment.systemPackages = with pkgs; [
     git
     neovim 
