@@ -11,9 +11,7 @@
     font = {
       size = 12;
       
-      normal = {
-        family = "JetBrainsMono";
-      };
+      family = "CodeNewRoman";
     };
 
     window = {
