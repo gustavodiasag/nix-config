@@ -1,9 +1,12 @@
 {
-  description = "Your new nix config";
+  description = "My NixOS and home-manager configurations";
 
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+
+    # Nix colors
+    nix-colors.url = "github:misterio77/nix-colors";
 
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-23.11";
@@ -22,7 +25,9 @@
       cool = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
 
-        modules = [./nixos/configuration.nix];
+        modules = [
+	  ./nixos/configuration.nix
+	];
       };
     };
 

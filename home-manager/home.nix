@@ -6,6 +6,10 @@
   ...
 }: {
   imports = [
+    ./alacritty.nix
+    ./colors.nix
+    ./fonts.nix
+    ./hyprland.nix
     ./git.nix
     ./zsh.nix
   ];
@@ -25,7 +29,14 @@
   };
 
   home.packages = with pkgs; [
+    # Languages
+    cargo
+    gcc
+
+    # Applications
+    alacritty
     spotify
+    discord
   ];
 
   programs.home-manager.enable = true;
