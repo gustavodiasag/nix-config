@@ -21,10 +21,21 @@
       "cd.." = "cd ..";
     };
 
-    oh-my-zsh = {
+    initExtraFirst = ''
+      ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
+    '';
+
+    zplug = {
       enable = true;
-      plugins = [ "git" ];
-      theme = "gozilla";
+      plugins = [
+        {
+	  name = "zsh-users/zsh-autosuggestions";
+	}
+	{
+	  name = "tylerreckart/hyperzsh";
+	  tags = [ "as:theme" ];
+	}
+      ];
     };
   };
 }
