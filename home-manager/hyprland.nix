@@ -28,6 +28,7 @@
       "${s}, B, exec, firefox"
       "${s}, Return, exec, ${alacritty}"
       "${s}, D, exec, discord"
+      "${s}, S, exec, spotify"
       "${s}, R, exec, ${wofi} --show drun"
 
       # Move focus
@@ -48,8 +49,8 @@
     };
 
     general = {
-      "gaps_in" = "5";
-      "gaps_out" = "5";
+      gaps_in = 5;
+      gaps_out = 5;
 
       "border_size" = "1";
       "no_border_on_floating" = "false";
