@@ -42,7 +42,10 @@
       wayland = true;
     };
 
-    desktopManager.gnome.enable = true;
+    desktopManager = {
+      gnome.enable = true;
+      wallpaper.mode = "fill";
+    };
   };
 
   services.xserver = {
