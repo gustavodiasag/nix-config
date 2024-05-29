@@ -13,6 +13,7 @@
     shellAliases = {
       # General commands
       g = "git";
+      vi = "nvim";
 
       # Nix-related
       nixswitch = "sudo nixos-rebuild switch";
