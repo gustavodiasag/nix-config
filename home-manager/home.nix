@@ -29,14 +29,24 @@
   };
 
   home.packages = with pkgs; [
+    # Tools
+    cmake
+    gnumake
+    unzip
+    clang-tools
+
     # Languages
+    go
+    openjdk
     cargo
     gcc
 
     # Applications
     alacritty
+    vscode
     spotify
     discord
+    ciscoPacketTracer8
   ];
 
   programs.home-manager.enable = true;
